@@ -3,9 +3,6 @@ package Calculator;
 import java.util.Scanner;
 
 public class Calculator {
-    int x;
-    int y;
-
     public void input() {
         Scanner scan = new Scanner(System.in);
         System.out.println("1.Addition of two numbers.");
@@ -80,13 +77,13 @@ public class Calculator {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the value of a: ");
-        int a = scan.nextInt();
+        float a = scan.nextFloat();
 
         System.out.println("Enter the value of b: ");
-        int b = scan.nextInt();
+        float b = scan.nextFloat();
 
         if (b != 0) {
-            int c = a / b;
+            float c = a / b;
             System.out.println("The division of " + a + " / " + b + " is: " + c);
         } else
             System.out.println("Cannot divide by zero");
